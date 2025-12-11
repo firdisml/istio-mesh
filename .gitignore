@@ -1,0 +1,25 @@
+# Node
+node_modules/
+*.log
+
+# Env
+.env
+
+# Docker
+*.tar
+
+# Kubernetes
+# (keep manifests committed)
+
+# Terraform
+.terraform/
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.backup
+terraform.tfvars
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

@@ -6,7 +6,7 @@ metadata:
   labels:
     app: service-b
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: service-b
@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: service-b
-          image: "<ECR_URI>/service-b:latest"
+          image: "954894834818.dkr.ecr.us-east-1.amazonaws.com/service-b:latest"
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080

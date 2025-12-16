@@ -13,7 +13,7 @@ variable "cluster_name" {
 variable "node_instance_type" {
   description = "EC2 instance type for worker nodes"
   type        = string
-  default     = "t3.medium"
+  default     = "t4g.small"
 }
 
 variable "node_min_size" {
@@ -25,19 +25,19 @@ variable "node_min_size" {
 variable "node_max_size" {
   description = "Maximum number of nodes"
   type        = number
-  default     = 3
+  default     = 1
 }
 
 variable "node_desired_size" {
   description = "Desired number of nodes"
   type        = number
-  default     = 2
+  default     = 1
 }
 
 variable "capacity_type" {
   description = "Capacity type for managed node group (ON_DEMAND or SPOT)"
   type        = string
-  default     = "ON_DEMAND"
+  default     = "SPOT"
 }
 
 variable "tags" {
